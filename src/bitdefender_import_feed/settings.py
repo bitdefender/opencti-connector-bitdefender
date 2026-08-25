@@ -41,7 +41,7 @@ class BitdefenderConfig(BaseConfigModel):
 
     http_timeout_seconds: int = Field(
         description="HTTP timeout in seconds for requesting feeds.",
-        default=60,
+        default=600,
     )
 
     verify_tls: bool = Field(

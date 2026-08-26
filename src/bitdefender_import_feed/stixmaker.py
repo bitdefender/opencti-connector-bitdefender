@@ -255,6 +255,8 @@ class StixMakerPrivate:
             "url_host_resolves_to_ip": ("related-to", True),
             "domain_relates_to_domain": ("related-to", True),
             "url_hosted_on_domain": ("related-to", True),
+            "domain_hosts_url": ("related-to", False),
+            "domain_is_connected_to_by_file": ("related-to", True),
         }
 
         # Skip unknown indicators as new may be added
